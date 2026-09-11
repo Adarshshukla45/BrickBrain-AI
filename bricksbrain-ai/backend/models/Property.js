@@ -15,7 +15,7 @@ const propertySchema = new mongoose.Schema(
     areaSqft: { type: Number, required: true },
     bhk: { type: Number, default: 1 },
     bathrooms: { type: Number, default: 1 },
-    furnishing: { type: String, enum: ["Unfurnished", "Semi-Furnished", "Furnished"], default: "Unfurnished" },
+    furnishing: { type: String, enum: ["Unfurnish", "Semi-Furnished", "Furnished"], default: "Unfurnished" },
     floor: { type: Number, default: 0 },
     totalFloors: { type: Number, default: 1 },
     ageOfProperty: { type: Number, default: 0 },
@@ -29,7 +29,7 @@ const propertySchema = new mongoose.Schema(
       lat: { type: Number, default: 0 },
       lng: { type: Number, default: 0 },
     },
-    areaIntelligence: {
+    areaIntelligence: { 
       walkScore: { type: Number, default: 0 },
       safetyScore: { type: Number, default: 0 },
       connectivityScore: { type: Number, default: 0 },
