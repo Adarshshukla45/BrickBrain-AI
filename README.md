@@ -1,3 +1,19 @@
+# Project TrackRecord
+
+## 📌 Project Status
+
+- [x] Backend
+- [x] Frontend
+- [x] ML Services
+- [x] Backend–ML Integration
+- [ ] Database Configuration
+- [ ] Testing
+- [ ] Deployment
+
+
+
+
+
 # BricksBrain AI 🧠🏠
 
 An AI-powered real estate platform — React + Tailwind frontend, Node.js/Express backend,
