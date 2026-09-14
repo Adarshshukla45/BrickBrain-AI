@@ -6,14 +6,126 @@ const Property = require("./models/Property");
 
 const cities = ["Bangalore", "Mumbai", "Delhi", "Pune", "Hyderabad", "Chennai", "Gurugram", "Noida"];
 const localities = {
-  Bangalore: ["Whitefield", "Koramangala", "HSR Layout", "Electronic City"],
-  Mumbai: ["Andheri", "Powai", "Thane", "Bandra"],
-  Delhi: ["Dwarka", "Rohini", "Saket", "Vasant Kunj"],
-  Pune: ["Hinjewadi", "Baner", "Kothrud", "Wakad"],
-  Hyderabad: ["Gachibowli", "Madhapur", "Kondapur", "Kukatpally"],
-  Chennai: ["OMR", "Velachery", "Anna Nagar", "T Nagar"],
-  Gurugram: ["Sector 49", "Sohna Road", "DLF Phase 3", "Sector 82"],
-  Noida: ["Sector 62", "Sector 137", "Sector 150", "Greater Noida West"],
+   Bangalore: [
+    "Whitefield",
+    "Koramangala",
+    "HSR Layout",
+    "Electronic City",
+    "Indiranagar",
+    "Marathahalli",
+    "Bellandur",
+    "Sarjapur Road",
+    "Hebbal",
+    "Yelahanka",
+    "Jayanagar",
+    "JP Nagar"
+  ],
+
+  Mumbai: [
+    "Andheri",
+    "Powai",
+    "Thane",
+    "Bandra",
+    "Borivali",
+    "Dadar",
+    "Navi Mumbai",
+    "Worli",
+    "Lower Parel",
+    "Malad",
+    "Goregaon",
+    "Kurla"
+  ],
+
+  Delhi: [
+    "Dwarka",
+    "Rohini",
+    "Saket",
+    "Vasant Kunj",
+    "Lajpat Nagar",
+    "Hauz Khas",
+    "Karol Bagh",
+    "Janakpuri",
+    "Pitampura",
+    "Rajouri Garden",
+    "Greater Kailash",
+    "Connaught Place"
+  ],
+
+  Pune: [
+    "Hinjewadi",
+    "Baner",
+    "Kothrud",
+    "Wakad",
+    "Viman Nagar",
+    "Kharadi",
+    "Hadapsar",
+    "Aundh",
+    "Koregaon Park",
+    "Shivajinagar",
+    "Pimple Saudagar",
+    "Magarpatta"
+  ],
+
+  Hyderabad: [
+    "Gachibowli",
+    "Madhapur",
+    "Kondapur",
+    "Kukatpally",
+    "Hitech City",
+    "Banjara Hills",
+    "Jubilee Hills",
+    "Begumpet",
+    "Secunderabad",
+    "Manikonda",
+    "Miyapur",
+    "Nallagandla"
+  ],
+
+  Chennai: [
+    "OMR",
+    "Velachery",
+    "Anna Nagar",
+    "T Nagar",
+    "Adyar",
+    "Guindy",
+    "Porur",
+    "Tambaram",
+    "Sholinganallur",
+    "Perungudi",
+    "Nungambakkam",
+    "Thoraipakkam"
+  ],
+
+  Gurugram: [
+    "Sector 49",
+    "Sohna Road",
+    "DLF Phase 3",
+    "Sector 82",
+    "Golf Course Road",
+    "Golf Course Extension Road",
+    "Sector 14",
+    "Sector 29",
+    "Palam Vihar",
+    "MG Road",
+    "Cyber City",
+    "Sector 57"
+  ],
+
+  Noida: [
+    "Sector 62",
+    "Sector 137",
+    "Sector 150",
+    "Greater Noida West",
+    "Sector 18",
+    "Sector 75",
+    "Sector 76",
+    "Sector 50",
+    "Sector 93",
+    "Sector 100",
+    "Sector 128",
+    "Sector 143"
+  ],
+
    Kanpur: [
     "Kakadeo",
     "Swaroop Nagar",
