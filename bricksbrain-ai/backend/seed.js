@@ -14,6 +14,22 @@ const localities = {
   Chennai: ["OMR", "Velachery", "Anna Nagar", "T Nagar"],
   Gurugram: ["Sector 49", "Sohna Road", "DLF Phase 3", "Sector 82"],
   Noida: ["Sector 62", "Sector 137", "Sector 150", "Greater Noida West"],
+   Kanpur: [
+    "Kakadeo",
+    "Swaroop Nagar",
+    "Arya Nagar",
+    "Tilak Nagar",
+    "Civil Lines",
+    "Kidwai Nagar",
+    "Govind Nagar",
+    "Shyam Nagar",
+    "Kalyanpur",
+    "Panki",
+    "Barra",
+    "Vikas Nagar",
+    "Harsh Nagar",
+    "Mall Road"
+  ]
 };
 const types = ["Apartment", "Villa", "Independent House", "Plot", "Studio"];
 const amenitiesList = ["Swimming Pool", "Gym", "Clubhouse", "24x7 Security", "Power Backup", "Children's Play Area", "Park", "Covered Parking", "Lift", "Rainwater Harvesting"];
