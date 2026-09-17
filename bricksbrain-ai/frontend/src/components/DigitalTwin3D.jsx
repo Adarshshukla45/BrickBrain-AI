@@ -5,7 +5,7 @@ import { RotateCcw, Sun, Moon, Eye, EyeOff } from "lucide-react";
 
 export default function DigitalTwin3D({
   bhk = 2,
-  areaSqft = 1000,
+  areaSqft = 5000,
   propertyType = "Apartment",
 }) {
   const mountRef = useRef(null);
