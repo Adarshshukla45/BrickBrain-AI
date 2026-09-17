@@ -41,7 +41,7 @@ export default function MapView({ lat, lng, title = "Property Location", height 
         style={{ height }}
         className="rounded-xl bg-gradient-to-br from-brand-50 to-gray-100 border border-dashed border-gray-300 flex flex-col items-center justify-center text-center p-6"
       >
-        <p className="text-sm text-gray-600 font-medium mb-1">Google Maps preview unavailable</p>
+        <p className="text-sm text-gray-600 font-medium mb-1">Google Maps Available soon</p>
         <p className="text-xs text-gray-400 mb-3">Add VITE_GOOGLE_MAPS_API_KEY in frontend/.env to enable the live map</p>
         <a
           href={`https://www.google.com/maps/search/?api=1&query=${lat},${lng}`}
