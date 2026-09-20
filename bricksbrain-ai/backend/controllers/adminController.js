@@ -1,6 +1,15 @@
 const User = require("../models/User");
 const Property = require("../models/Property");
 
+exports.getPendingProperties = async (req, res, next) => {
+  try {
+    const properties = await Property.find({ status: "Pending" }).sort({ createdAt: -1 }).populate("owner", "name email phone");
+    res.json({ success: true, properties });
+  } catch (err) {
+    next(err);
+  }
+};
+
 exports.getDashboardStats = async (req, res, next) => {
   try {
     const [totalUsers, totalProperties, activeListings, totalViews] = await Promise.all([
