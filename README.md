@@ -6,7 +6,7 @@
 - [x] Frontend
 - [x] ML Services
 - [x] Backend–ML Integration
-- [ ] Database Configuration
+- [x] Database Configuration
 - [ ] Testing
 - [ ] Deployment
 
