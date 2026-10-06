@@ -4,7 +4,7 @@ const connectDB = require("./config/db");
 const User = require("./models/User");
 const Property = require("./models/Property");
 
-const cities = ["Bangalore", "Mumbai", "Delhi", "Pune", "Hyderabad", "Chennai", "Gurugram", "Noida"];
+const cities = ["Bangalore", "Mumbai", "Delhi", "Pune", "Hyderabad", "Chennai", "Gurugram", "Noida","Kanpur"];
 const localities = {
    Bangalore: [
     "Whitefield",
@@ -12,6 +12,7 @@ const localities = {
     "HSR Layout",
     "Electronic City",
     "Indiranagar",
+    "Kidwai Nagar",
     "Marathahalli",
     "Bellandur",
     "Sarjapur Road",
