@@ -1,5 +1,19 @@
 const jwt = require("jsonwebtoken");
 const User = require("../models/User");
+const rateLimit = require("express-rate-limit");
+
+// Rate limiter for authentication requests
+const authLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  limit: 20, // Maximum 20 requests per client
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: {
+    success: false,
+    message: "Too many requests. Please try again later."
+  }
+});
+
 
 const protect = async (req, res, next) => {
   try {
@@ -10,7 +24,7 @@ const protect = async (req, res, next) => {
       token = req.cookies.tokens;
     }
     //checking for tokens
-
+    
     if (!token) {
       return res.status(401).json({ success: false, message: "Not authorized, no token" });
     }
